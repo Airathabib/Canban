@@ -1,0 +1,57 @@
+@import './reset';
+@import './variables';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font: 400 normal 1.125rem/1.2 $default-font;
+	color: $black;
+	background-color: $main-block;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	max-width: 1235px;
+	margin: 0 auto;
+	padding: 0 16px 0 19px;
+}
+
+.validation {
+	width: 100%;
+	margin-bottom: 15px;
+	color: $validation;
+}
+
+.select {
+	&__control {
+		width: 100%;
+		cursor: pointer !important;
+		border-radius: 0.5rem !important;
+		border: none !important;
+
+		&--is-focused {
+			box-shadow: 0 0 transparent !important;
+		}
+	}
+
+	&__menu {
+		visibility: visible !important;
+		border-radius: 0.5rem !important;
+		position: relative !important;
+		z-index: 1000;
+
+		&-list {
+			padding: 0 !important;
+			border-radius: 0.5rem !important;
+		}
+	}
+
+	&:invalid {
+		color: $validation !important;
+	}
+}

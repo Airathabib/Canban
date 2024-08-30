@@ -1,0 +1,59 @@
+@import '/src/assets/styles/variables';
+@import '/src/assets/styles/mixins';
+
+.card_task {
+	@include transition(max-width);
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px 0;
+	width: 100%;
+	max-width: 282px;
+	padding: 12px;
+	max-height: 700px;
+	overflow: auto;
+
+	background-color: $task-block;
+	border-radius: 10px;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		gap: 15px 0;
+		> a {
+			> div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 10px;
+				background-color: $white;
+				border-radius: 5px;
+
+				&:hover > button {
+					display: block;
+				}
+
+				> button {
+					@include transition(opacity);
+
+					align-self: flex-start;
+					display: none;
+					height: 18px;
+					font-size: 1.3rem;
+
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1250px) {
+		max-width: 48%;
+	}
+
+	@media (max-width: 600px) {
+		max-width: 100%;
+	}
+}

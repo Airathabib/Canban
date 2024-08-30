@@ -1,0 +1,18 @@
+@import '/src/assets/styles/variables';
+
+.header {
+	background-color: $header-footer-block;
+
+	> div {
+		> div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+
+			@media (max-width: 600px) {
+				justify-content: flex-end;
+			}
+		}
+	}
+}
