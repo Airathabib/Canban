@@ -1,8 +1,8 @@
 import { FormEvent, FunctionComponent } from 'react'
 import ReactTextareaAutosize from 'react-textarea-autosize'
 
-import Field from '../../../ui/field/Field'
-import Button from '../../../ui/button/Button'
+import Field from '../../ui/field/Field'
+import Button from '../../ui/button/Button'
 
 import styles from './TasksInfoForm.module.scss'
 

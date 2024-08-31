@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import Layout from '../../layout/Layout'
 import CardTask from '../../ui/card-task/CardTask';	
 
-import styles from './Home.module.scss'
+import styles from './Main.module.scss'
 
 export interface IDataTasks {
 	block: string

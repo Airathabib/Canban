@@ -1,9 +1,9 @@
 import { FormEvent, FunctionComponent } from 'react'
 import { IoMdClose } from 'react-icons/io'
 
-import Button from '../../../ui/button/Button'
+import Button from '../../ui/button/Button'
 
-import { IDataTasks } from '../../home/Home'
+import { IDataTasks } from '../../pages/main/Main'
 import TasksInfoForm from './TasksInfoForm'
 
 interface ITasksInfoProps {

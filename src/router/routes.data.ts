@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import Home from '../components/screens/home/Home'
-import Tasks from '../components/screens/tasks/Tasks'
+import Home from '../components/pages/main/Main'
+import Tasks from '../components/tasks/Tasks'
 
 interface IRoutes {
 	path: string

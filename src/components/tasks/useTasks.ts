@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-import { IDataTasks } from '../home/Home'
+import { IDataTasks } from '../pages/main/Main'
 
 export const useTasks = () => {
 	const [dataTask, setDataTask] = useState<IDataTasks | null>(null)

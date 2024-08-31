@@ -1,11 +1,11 @@
 import { FunctionComponent } from 'react'
 
-import Layout from '../../layout/Layout'
+import Layout from '../layout/Layout'
 
-import TasksInfo from './info/TasksInfo'
+import TasksInfo from './taskInfo/TasksInfo'
 import styles from './Tasks.module.scss'
 import { useTasks } from './useTasks'
-import NotFound from '../not-found/NotFound'
+import NotFound from '../pages/not-found/NotFound'
 
 const Tasks: FunctionComponent = () => {
 	const { isNotFoundTaskId, ...rest } = useTasks()

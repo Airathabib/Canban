@@ -3,7 +3,7 @@ import { IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import { IDataTasks } from '../../screens/home/Home'
+import { IDataTasks } from '../../pages/main/Main'
 
 import { animationCardTask } from './animationCardTask'
 import CardTaskForm from './form/CardTaskForm'

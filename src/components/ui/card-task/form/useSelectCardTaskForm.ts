@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 
-import { IDataTasks } from '../../../screens/home/Home'
+import { IDataTasks } from '../../../pages/main/Main'
 
 interface ISelectOPtionProps {
 	value: string
