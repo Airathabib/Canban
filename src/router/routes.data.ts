@@ -1,12 +1,6 @@
-import { FunctionComponent } from 'react'
-
 import Home from '../components/pages/main/Main'
 import Tasks from '../components/tasks/Tasks'
-
-interface IRoutes {
-	path: string
-	component: FunctionComponent
-}
+import { IRoutes } from '../components/interfaces/interfaces'
 
 export const routes: IRoutes[] = [
 	{

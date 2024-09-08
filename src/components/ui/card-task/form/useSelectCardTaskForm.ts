@@ -1,11 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 
-import { IDataTasks } from '../../../pages/main/Main'
-
-interface ISelectOPtionProps {
-	value: string
-	label: string
-}
+import { IDataTasks, ISelectOPtionProps  } from '../../../interfaces/interfaces'
 
 export const useSelectCardTaskForm = (
 	dataTasks: IDataTasks[],

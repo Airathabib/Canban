@@ -15,7 +15,7 @@ const Logo: FunctionComponent = () => {
 
 	return (
 		<h1 onClick={handleLinkHomeClick} className={styles.logo}>
-			Awesome Kanban Board
+			Kanban Board
 		</h1>
 	)
 }

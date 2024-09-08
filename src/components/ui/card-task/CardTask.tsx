@@ -3,20 +3,12 @@ import { IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import { IDataTasks } from '../../pages/main/Main'
-
 import { animationCardTask } from './animationCardTask'
 import CardTaskForm from './form/CardTaskForm'
 import { useCardTask } from './useCardTask'
 import styles from './CardTask.module.scss'
 import Button from '../button/Button'
-
-interface ICardTaskProps {
-	dataTasks: IDataTasks[]
-	setDataTasks: React.Dispatch<React.SetStateAction<IDataTasks[]>>
-	title: string
-	variant: string
-}
+import { ICardTaskProps } from '../../interfaces/interfaces'
 
 const CardTask: FunctionComponent<ICardTaskProps> = ({
 	dataTasks,

@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect, useContext } from 'react'
 
-import { IDataTasks } from '../../pages/main/Main'
+import { IDataTasks } from '../../interfaces/interfaces'
 
 import { ITaskContext, TaskContext  } from '../../../providers/TaskProvider'
 

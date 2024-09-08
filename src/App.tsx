@@ -1,8 +1,7 @@
-import React from 'react'
 import Router from './router/Router';
 import TaskProvider from './providers/TaskProvider'
 
-import './assets/styles/global.scss'
+import './assets/styles/main.scss'
 
 function App() {
   return (

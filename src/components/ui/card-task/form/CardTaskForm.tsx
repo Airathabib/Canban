@@ -1,24 +1,13 @@
 import { FunctionComponent } from 'react'
 import Select from 'react-select'
 
-import { IDataTasks } from '../../../pages/main/Main'
+import { IDataTasks } from '../../../interfaces/interfaces'
 
 import { useSelectCardTaskForm } from './useSelectCardTaskForm'
 import styles from './CardTaskForm.module.scss'
 import Button from '../../button/Button'
 import Field from '../../field/Field'
-
-interface ICardTaskFormProps {
-	dataTasks: IDataTasks[]
-	variant: string
-	fieldValue: string
-	handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void
-	handleChangeInput: (e: React.FormEvent<HTMLInputElement>) => void
-	handleCancelClick: (
-		e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-	) => void
-	isDuplicateTask: boolean
-}
+import { ICardTaskFormProps } from '../../../interfaces/interfaces'
 
 const CardTaskForm: FunctionComponent<ICardTaskFormProps> = ({
 	dataTasks,

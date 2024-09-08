@@ -1,6 +1,7 @@
-import { FunctionComponent, InputHTMLAttributes } from 'react'
+import { FunctionComponent } from 'react'
 
-interface IField extends InputHTMLAttributes<HTMLInputElement> {}
+import { IField } from '../../interfaces/interfaces'
+
 
 const Field: FunctionComponent<IField> = ({ ...rest }) => {
 	return <input {...rest} />

@@ -1,11 +1,9 @@
-import { ButtonHTMLAttributes, FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 import clsx from 'clsx'
+import { IButton } from '../../interfaces/interfaces'
 
 import styles from './Button.module.scss'
 
-interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
-	variant?: string
-}
 
 const Button: FunctionComponent<IButton> = ({
 	children,

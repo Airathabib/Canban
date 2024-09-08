@@ -3,7 +3,7 @@ import { IoMdClose } from 'react-icons/io'
 
 import Button from '../../ui/button/Button'
 
-import { IDataTasks } from '../../pages/main/Main'
+import { IDataTasks } from '../../interfaces/interfaces'
 import TasksInfoForm from './TasksInfoForm'
 
 interface ITasksInfoProps {

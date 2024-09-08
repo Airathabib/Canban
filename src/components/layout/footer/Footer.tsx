@@ -1,6 +1,6 @@
 import { FunctionComponent, useState, useContext, useMemo } from 'react'
 
-import { IDataTasks } from '../../pages/main/Main'
+import { IDataTasks } from '../../interfaces/interfaces'
 
 import { ITaskContext, TaskContext } from '../../../providers/TaskProvider'
 
@@ -18,10 +18,8 @@ const Footer: FunctionComponent = () => {
 			? (JSON.parse(localStorage.getItem('tasks') as string) as IDataTasks[])
 			: []
 		const activeDataTasks = dataTasksLS.filter(data => data.block === 'backlog')
-		const finishedDataTasks = dataTasksLS.filter(
-			data => data.block === 'finished'
-		)
 
+		const finishedDataTasks = dataTasksLS.filter(data => data.block === 'finished')
 		setAmountActiveTasks(activeDataTasks.length)
 		setAmountFinishedTasks(finishedDataTasks.length)
 	}, [isInteractionPostDataPost])

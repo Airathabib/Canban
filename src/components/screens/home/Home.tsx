@@ -1,16 +1,12 @@
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import Layout from '../../layout/Layout'
-import CardTask from '../../ui/card-task/CardTask';	
+import CardTask from '../../ui/card-task/CardTask';
+import { IDataTasks } from '../../interfaces/interfaces';
 
 import styles from './Home.module.scss'
 
-export interface IDataTasks {
-	block: string
-	id: number
-	title: string
-	description: string
-}
+
 
 const Home: FunctionComponent = () => {
 	const [dataTasks, setDataTasks] = useState<IDataTasks[]>([])
