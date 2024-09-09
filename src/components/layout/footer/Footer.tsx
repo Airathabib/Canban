@@ -11,7 +11,7 @@ import styles from './Footer.module.scss'
 const Footer: FunctionComponent = () => {
 	const [amountActiveTasks, setAmountActiveTasks] = useState<number>(0)
 	const [amountFinishedTasks, setAmountFinishedTasks] = useState<number>(0)
-	const { isInteractionPostDataPost } = useContext(TaskContext) as ITaskContext
+	const { isInteractionPost: isInteractionPostDataPost } = useContext(TaskContext) as ITaskContext
 
 	useMemo(() => {
 		const dataTasksLS = localStorage.getItem('tasks')

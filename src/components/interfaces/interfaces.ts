@@ -1,4 +1,4 @@
-import { FunctionComponent, ButtonHTMLAttributes, InputHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, InputHTMLAttributes } from 'react';
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: string
@@ -29,11 +29,6 @@ export interface ICardTaskProps {
 	setDataTasks: React.Dispatch<React.SetStateAction<IDataTasks[]>>
 	title: string
 	variant: string
-}
-
-export interface IRoutes {
-	path: string
-	component: FunctionComponent
 }
 
 export interface ISelectOPtionProps {

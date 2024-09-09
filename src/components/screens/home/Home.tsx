@@ -6,8 +6,6 @@ import { IDataTasks } from '../../interfaces/interfaces';
 
 import styles from './Home.module.scss'
 
-
-
 const Home: FunctionComponent = () => {
 	const [dataTasks, setDataTasks] = useState<IDataTasks[]>([])
 

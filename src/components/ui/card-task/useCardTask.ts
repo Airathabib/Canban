@@ -13,7 +13,7 @@ export const useCardTask = (
 	const [isShowForm, setIsShowForm] = useState<boolean>(false)
 	const [isInteractionTask, setIsInteractionTask] = useState<boolean>(false)
 	const [isDuplicateTask, setISDuplicateTask] = useState<boolean>(false)
-	const { setIsInteractionPostDataPost } = useContext(
+	const { setIsInteractionPost: setIsInteractionPostDataPost } = useContext(
 		TaskContext
 	) as ITaskContext
 
@@ -25,7 +25,7 @@ export const useCardTask = (
 		return dataTaskLS
 	}
 
-	const handleClickShowFieldAndSelectTask = () => {
+	const handleClickShow = () => {
 		setIsShowForm(true)
 	}
 
@@ -127,7 +127,7 @@ export const useCardTask = (
 			fieldValue,
 			isShowForm,
 			handle: {
-				handleClickShowFieldAndSelectTask,
+				handleClickShow,
 				handleCancelClick,
 				handleDeleteTask,
 				handleChangeInput,

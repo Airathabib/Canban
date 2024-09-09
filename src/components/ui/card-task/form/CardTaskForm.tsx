@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react'
 import Select from 'react-select'
 
-import { IDataTasks } from '../../../interfaces/interfaces'
-
 import { useSelectCardTaskForm } from './useSelectCardTaskForm'
 import styles from './CardTaskForm.module.scss'
 import Button from '../../button/Button'

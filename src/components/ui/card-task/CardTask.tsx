@@ -22,7 +22,7 @@ const CardTask: FunctionComponent<ICardTaskProps> = ({
 		handle: {
 			handleCancelClick,
 			handleChangeInput,
-			handleClickShowFieldAndSelectTask,
+			handleClickShow,
 			handleDeleteTask,
 			handleSubmit
 		},
@@ -42,7 +42,7 @@ const CardTask: FunctionComponent<ICardTaskProps> = ({
 					{dataTasks.map(data => (
 						<Fragment key={data.id}>
 							{data.block === variant && (
-								<Link to={`/Kanban-board/tasks/${data.id}`}>
+								<Link to={`/kanban-board/tasks/${data.id}`}>
 									<motion.div variants={animationCardTask.item}>
 										{data.title}
 										<button onClick={e => handleDeleteTask(e, data)}>
@@ -85,7 +85,7 @@ const CardTask: FunctionComponent<ICardTaskProps> = ({
 							? false
 							: true
 					}
-					onClick={handleClickShowFieldAndSelectTask}
+					onClick={handleClickShow}
 				/>
 			)}
 		</div>

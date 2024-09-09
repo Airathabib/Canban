@@ -9,7 +9,7 @@ const NotFound: FunctionComponent = () => {
 		<Layout>
 			<main>
 				<div className='container'>
-					<div className={styles.not_found}>Not Found</div>
+					<div className={styles.not_found}>Pages Not Found</div>
 				</div>
 			</main>
 		</Layout>

@@ -8,8 +8,8 @@ import {
 } from 'react'
 
 export interface ITaskContext {
-	isInteractionPostDataPost: boolean
-	setIsInteractionPostDataPost: Dispatch<SetStateAction<boolean>>
+	isInteractionPost: boolean
+	setIsInteractionPost: Dispatch<SetStateAction<boolean>>
 }
 
 export const TaskContext = createContext<ITaskContext | null>(null)
@@ -17,12 +17,12 @@ export const TaskContext = createContext<ITaskContext | null>(null)
 const TaskProvider: FunctionComponent<{ children: ReactNode }> = ({
 	children
 }) => {
-	const [isInteractionPostDataPost, setIsInteractionPostDataPost] =
+	const [isInteractionPost, setIsInteractionPost] =
 		useState<boolean>(false)
 
 	return (
 		<TaskContext.Provider
-			value={{ isInteractionPostDataPost, setIsInteractionPostDataPost }}
+			value={{ isInteractionPost: isInteractionPost, setIsInteractionPost: setIsInteractionPost }}
 		>
 			{children}
 		</TaskContext.Provider>
