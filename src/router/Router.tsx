@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../components/screens/home/Home'
 import NotFound from '../components/screens/not-found/NotFound'
-import Tasks from '../components/tasks/Tasks'
+import Tasks from '../components/screens/tasks/Tasks'
 
 const Router: FunctionComponent = () => {
 	return (
